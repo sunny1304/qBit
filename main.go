@@ -10,7 +10,7 @@ import (
 )
 
 func init() {
-	/* Read the confif like Rails */
+	/* Read the config like Rails */
 
 	db_user := beego.AppConfig.String("db_username")
 	db_passwd := beego.AppConfig.String("db_password")
@@ -31,7 +31,7 @@ func init() {
 	name := "default"
 
 	// Drop table and re-create.
-	force := false
+	force := true
 
 	// Print log.
 	verbose := true

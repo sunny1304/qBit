@@ -7,5 +7,6 @@ import (
 
 func init() {
 	beego.Router("/", &controllers.MainController{})
-	beego.Router("/user", new(controllers.UserController), "get:Authuser")
+	beego.Router("/brand/new", new(controllers.BrandController), "get:Create_brand")
+	beego.Router("/brand/save", new(controllers.BrandController), "post:Save_brand")
 }
